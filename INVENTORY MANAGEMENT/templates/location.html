@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTORY-MANAGEMENT</title>
+    <link rel="stylesheet" href="../static/style4.css">
+</head>
+<body>
+  <div class="top">
+    <h1>INVENTORY MANAGENT</h1>
+</div>
+<div class="navbar">
+    <a class ="home"href="{{url_for('report')}}">Home</a>
+    <a href="{{url_for('product')}}">ADD PRODUCT</a>
+    <a href="{{url_for('location')}}">ADD LOCATION</a>
+    <a href="{{url_for('movement')}}">MOVE PRODUCT</a>
+  </div>
+    <div class="main">
+    <br>
+    <br>
+    <form action="" method="post" class="decor">
+      <div class="form-inner">
+      <div class="circle">
+        <h1>ADD LOCATION</h1>
+        <br>
+      <input type="text" name ="location" required placeholder="LOCATION">
+      
+       <button type="submit" href="report.html">ADD</button>
+      </div>
+    </form>
+    {% if exists %}
+        <p>This location is already exist on the table.</p>
+    {% else %}
+        <p>This location is added to the report..</p>
+    {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style3.css">
+</head>
+<body>
+<div class="top">
+    <h1>INVENTORY MANAGENT</h1>
+</div>
+<div class="navbar">
+    <a class ="home"href="{{url_for('report')}}">Home</a>
+    <a href="{{url_for('product')}}">ADD PRODUCT</a>
+    <a href="{{url_for('location')}}">ADD LOCATION</a>
+    <a href="{{url_for('movement')}}">MOVE PRODUCT</a>
+  </div>
+  <div class="main">
+    
+    <br>
+    <br>
+    <form action="" method="post" class="decor" >
+        <div class="form-inner">
+      <div class="circle">
+        <h1>MOVE PRODUCT</h1>
+        <br>
+        
+        <input type="text" name ="prod" placeholder="PRODUCT" required >
+        
+        <input type="text" name ="qty" placeholder="QUANTITY" required>
+       
+        <input type="text" name ="from" placeholder="FROM" required>
+        
+        <input type="text" name ="to" placeholder="TO" required>
+
+         <button type="submit" href="report.html">MOVE</button>
+       </div>
+      </form>
+    </div>
+</body>
+<script src="../static/script.js"></script>
+</html>
