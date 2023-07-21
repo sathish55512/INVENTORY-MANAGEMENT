@@ -21,7 +21,4 @@ product_id varchar(50) not null,
 qty int not null
 );
 
-select *from product;
-select *from location;
-select *from report;
 
